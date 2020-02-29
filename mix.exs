@@ -22,7 +22,8 @@ defmodule GutenburgConcordance.MixProject do
   defp deps do
     [
       {:httpoison, "~> 1.6"},
-      {:poison, "~> 3.1"}
+      {:poison, "~> 3.1"},
+      {:gproc, "~> 0.5.0"}
     ]
   end
 end

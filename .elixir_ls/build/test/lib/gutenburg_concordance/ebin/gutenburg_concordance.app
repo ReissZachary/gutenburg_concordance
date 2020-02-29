@@ -1,6 +1,10 @@
 {application,gutenburg_concordance,
-             [{applications,[kernel,stdlib,elixir,logger,poison,httpoison]},
+             [{applications,[kernel,stdlib,elixir,logger,gproc,poison,
+                             httpoison]},
               {description,"gutenburg_concordance"},
-              {modules,['Elixir.GutenburgConcordance']},
+              {modules,['Elixir.Concordance.Server',
+                        'Elixir.GutenburgConcordance','Elixir.Location',
+                        'Elixir.Parser','Elixir.ProcessSupervisor',
+                        'Elixir.Word.Server']},
               {registered,[]},
               {vsn,"0.1.0"}]}.
